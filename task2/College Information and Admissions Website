@@ -1,1 +1,94 @@
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Institute of Technology</title>
+    <style>
+        :root { --primary: #1e3a8a; --accent: #3b82f6; --bg: #f8fafc; --text: #1e293b; --muted: #64748b; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+        body { background: var(--bg); color: var(--text); line-height: 1.5; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 10; }
+        nav a { text-decoration: none; color: var(--text); margin-left: 1.5rem; font-weight: 500; font-size: 0.9rem; }
+        nav a:hover { color: var(--accent); }
+        .banner { background: linear-gradient(rgba(30,58,138,0.85), rgba(30,58,138,0.85)), url('https://picsum.photos/1200/400') center/cover; color: #fff; text-align: center; padding: 5rem 1rem; }
+        .banner h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .container { max-width: 1100px; margin: auto; padding: 3rem 1.5rem; }
+        h2 { color: var(--primary); margin-bottom: 1.5rem; font-size: 1.8rem; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .card { background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border-top: 4px solid var(--accent); transition: 0.3s; }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.08); }
+        .card h3 { margin-bottom: 0.5rem; color: var(--primary); }
+        .card p { color: var(--muted); font-size: 0.9rem; }
+        footer { background: var(--primary); color: #fff; text-align: center; padding: 1.5rem; margin-top: 2rem; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <b>Apex Institute</b>
+        <div>
+            <a href="#about">About</a>
+            <a href="#departments">Departments</a>
+            <a href="#admissions">Admissions</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <h1>Shape Your Future at Apex</h1>
+        <p>Excellence in Education, Research, and Innovation</p>
+    </div>
+
+    <div class="container">
+        <section id="about">
+            <h2>Institutional Overview</h2>
+            <p style="text-align: center; max-width: 700px; margin: auto; color: var(--muted);">Founded in 1995, Apex Institute of Technology is a premier institution dedicated to fostering academic brilliance, state-of-the-art research, and holistic student development.</p>
+        </section>
+
+        <section id="departments" style="margin-top: 4rem;">
+            <h2>Departments & Courses</h2>
+            <div class="grid">
+                <div class="card"><h3>Computer Science</h3><p>B.Tech / M.Tech in CSE, AI & Machine Learning, Data Science.</p></div>
+                <div class="card"><h3>Electronics & Comm.</h3><p>IoT, Embedded Systems, VLSI Design, and Communication Networks.</p></div>
+                <div class="card"><h3>Mechanical Eng.</h3><p>Robotics, Thermal Engineering, CAD/CAM, and Advanced Manufacturing.</p></div>
+            </div>
+        </section>
+
+        <section id="admissions" style="margin-top: 4rem;">
+            <h2>Admissions Procedure</h2>
+            <div class="grid">
+                <div class="card"><h3>1. Eligibility</h3><p>Min 60% in 10+2 with Physics, Chemistry, and Mathematics.</p></div>
+                <div class="card"><h3>2. Entrance Exam</h3><p>Valid score in national/state entrance tests (JEE/CET).</p></div>
+                <div class="card"><h3>3. Counseling</h3><p>Seat allocation via central counseling and document verification.</p></div>
+            </div>
+        </section>
+
+        <section id="facilities" style="margin-top: 4rem;">
+            <h2>Campus Facilities</h2>
+            <div class="grid">
+                <div class="card"><h3>Central Library</h3><p>Over 50,000 books, digital journals, and silent study zones.</p></div>
+                <div class="card"><h3>Advanced Labs</h3><p>High-performance computing and research-grade hardware.</p></div>
+                <div class="card"><h3>Hostel & Sports</h3><p>On-campus housing with modern athletic and recreational grounds.</p></div>
+            </div>
+        </section>
+
+        <section id="contact" style="margin-top: 4rem;">
+            <h2>Contact Details</h2>
+            <div class="card" style="max-width: 500px; margin: auto; text-align: center;">
+                <h3>Apex Campus</h3>
+                <p>123 University Avenue, Knowledge City</p>
+                <p>Email: admissions@apex.edu | Ph: +1 (555) 987-6543</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Apex Institute of Technology. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+```
