@@ -1,1 +1,98 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        :root { --bg: #0f172a; --card: #1e293b; --accent: #38bdf8; --text: #f8fafc; --muted: #94a3b8; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; scroll-behavior: smooth; }
+        body { background: var(--bg); color: var(--text); line-height: 1.5; padding: 2rem 5%; max-width: 900px; margin: auto; }
+        nav { display: flex; justify-content: space-between; position: fixed; top: 0; left: 0; right: 0; background: rgba(15,23,42,0.9); padding: 1rem 5%; backdrop-filter: blur(8px); z-index: 10; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        nav a { color: var(--text); text-decoration: none; margin-left: 1rem; font-size: 0.9rem; }
+        nav a:hover { color: var(--accent); }
+        section { padding: 5rem 0 2rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        h2 { color: var(--accent); margin-bottom: 1.5rem; font-size: 1.5rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+        .card { background: var(--card); padding: 1.5rem; border-radius: 8px; transition: 0.3s; border: 1px solid rgba(255,255,255,0.05); }
+        .card:hover { transform: translateY(-3px); border-color: var(--accent); }
+        .btn { display: inline-block; background: var(--accent); color: var(--bg); padding: 0.6rem 1.2rem; border-radius: 4px; text-decoration: none; font-weight: bold; margin-top: 1rem; border: none; cursor: pointer; }
+        input, textarea { width: 100%; padding: 0.6rem; margin-bottom: 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: var(--text); border-radius: 4px; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        section { animation: fadeIn 0.8s ease-out; }
+    </style>
+</head>
+<body>
+    <nav>
+        <b>Alex.dev</b>
+        <div>
+            <a href="#about">About</a>
+            <a href="#edu">Edu</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="about">
+        <h1>Alex Morgan</h1>
+        <p style="color:var(--muted)">Software Engineer & AI Enthusiast</p>
+    </section>
+
+    <section id="edu">
+        <h2>Education</h2>
+        <div class="card">
+            <b>B.S. in Computer Science</b><br>
+            <span style="color:var(--muted)">Stanford University • 2018–2022 (GPA: 3.88)</span>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="grid">
+            <div class="card"><b>Languages:</b> JavaScript, Python, SQL</div>
+            <div class="card"><b>Frameworks:</b> React, Node.js, Tailwind</div>
+            <div class="card"><b>Tools:</b> Git, Docker, AWS</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects & Achievements</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Nexus AI</h3>
+                <p style="color:var(--muted); font-size:0.9rem">LLM-powered productivity assistant tool.</p>
+            </div>
+            <div class="card">
+                <h3>Global Hackathon Winner</h3>
+                <p style="color:var(--muted); font-size:0.9rem">1st Place out of 1,200+ teams (Nov 2025).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <div class="grid">
+            <div class="card">Photography & Film</div>
+            <div class="card">Sci-Fi Reading & Hiking</div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="#" class="btn" onclick="alert('Resume download simulated!')">Download PDF Resume</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form onsubmit="event.preventDefault(); alert('Message sent!');">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button class="btn" type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
